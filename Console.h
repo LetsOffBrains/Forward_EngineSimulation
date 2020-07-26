@@ -1,14 +1,17 @@
 #pragma once
 
 #include <iostream>
-#include "TestStand.h"
+
 
 class Console
 {
 private:
-	int outTemp;
+	double Temp;
 public:
-	void Input_OutsideTemp();
-	void Output_Results();
+	void input_OutsideTemp();
+	void output_Results();
+	void write(const char[]);
+
+	double getTemp();
 };
 

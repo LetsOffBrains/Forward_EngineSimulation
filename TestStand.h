@@ -5,8 +5,13 @@
 class TestStand
 {
 private:
-	int outTemp;
+	double Temp = 0.0;
+	Engine* eng = nullptr;
 public:
-	TestStand(int);
+	TestStand();
+	TestStand(double);
+
+	void setTemp(double);
+	void setEngine(Engine*);
 };
 
